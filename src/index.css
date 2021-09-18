@@ -30,6 +30,7 @@ body{
   font-family : "Ink Free";
   background-color : #8DA0A6;
   padding : 0.5rem;
+  box-shadow : 3px 2px black;
 
 }
 .buttonFirst:hover{

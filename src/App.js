@@ -4,14 +4,16 @@ function App() {
 
   const [click, setClick] = useState(0);
 
-  function incr(){
-    setClick( click + 1 );
-  }
+  
 
   return (  
     <div className="App">
         <h1> Click on this </h1>
-        <button onClick={incr} className = "buttonFirst"></button> 
+        <div className = "buttonDiv">
+        <button onClick={()=>{setClick(click + 1)} } className = "buttonFirst">+</button> 
+        <button onClick={() => {setClick(0)}} className = "buttonFirst">Reset</button>
+        <button onClick={() => {setClick(click - 1)}} className = "buttonFirst">-</button>   
+        </div>
         <h1> You clicked {click} times </h1>
     </div>
   );
